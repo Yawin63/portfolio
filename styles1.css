@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.project-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #2575fc;
+}
+
+.project-text h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.project-text p, .project-text ul {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.project-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project-buttons button {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-buttons button:hover {
+    background-color: #6a11cb;
+}
+
+.project-image {
+    flex: 1;
+    text-align: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-text {
+        text-align: center;
+    }
+
+    .project-buttons button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Animation on scroll */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

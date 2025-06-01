@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Yanis MARCHAL">
+    <meta name="description" content="Présentation">
+    <title>Yanis Marchal | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Ajout d'animations et transitions */
+        .profile-pic {
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        .pdf-button {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .pdf-button:hover {
+            transform: scale(1.05);
+            background-color: #6a11cb;
+        }
+
+        .project {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>  
+    <link rel="icon" type="image/png" href="/image/favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="#a-propos">À propos de moi</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#divers">Divers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="header-content">
+            <h1>Yanis Marchal</h1>
+            <h4>Étudiant en BUT Réseaux Télécommunications à Clermont-Ferrand.</h4>
+            <img src="./image/photo.jpg" alt="Yanis Marchal" class="profile-pic">
+            <a href="./image/CV Yanis Marchal.pdf" class="pdf-button">Télécharger le CV</a>
+        </div>
+
+        <section id="a-propos">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis actuellement en 3e année de BUT Réseaux et Télécommunications à Clermont-Ferrand. Passionné par
+                les nouvelles technologies, je suis quelqu'un de rigoureux, curieux et polyvalent. J'apprécie
+                particulièrement le travail en équipe, où je trouve toujours une opportunité d'apprendre et de
+                m'améliorer. Mon stage de fin de BUT se déroulera chez EDF, où j'interviendrai en tant que technicien
+                Télécommunications sur la centrale nucléaire de Saint-Alban. Ce stage représente une grande opportunité
+                de mettre en pratique mes compétences tout en contribuant à un secteur essentiel à la société.
+            </p>
+
+
+            <h3>Mes qualités</h3>
+            <div class="qualities">
+                <div class="quality-item">
+                    <h4>Capacité d'analyse</h4>
+                    <p>
+                        Depuis mon plus jeune âge, j'ai développé une passion pour les échecs. Ce jeu m'a permis de
+                        développer un esprit stratégique et analytique. La capacité à anticiper, structurer des
+                        stratégies et résoudre des problèmes complexes est devenue une seconde nature pour moi. Cette
+                        rigueur mentale me permet d'aborder les défis techniques et professionnels de manière méthodique
+                        et précise.
+                    </p>
+                </div>
+                <div class="quality-item">
+                    <h4>Travail d'équipe</h4>
+                    <p>
+                        Le travail d'équipe est au cœur de mes expériences. Dès mon plus jeune âge, la pratique du
+                        football m'a appris à collaborer efficacement et à soutenir mes coéquipiers dans l'atteinte d'un
+                        objectif commun. Cette expérience m'a également appris à gérer les différences et à intégrer des
+                        points de vue divers, un atout précieux dans les projets d'équipe à l'IUT.
+                    </p>
+                </div>
+                <div class="quality-item">
+                    <h4>Rigueur</h4>
+                    <p>
+                        La rigueur est l'une de mes qualités fondamentales. Que ce soit dans mes études ou dans mes
+                        activités personnelles, je m'efforce toujours de donner le meilleur de moi-même. J'aime
+                        comprendre les choses en profondeur et les exécuter de manière précise. La recherche de la
+                        perfection, bien que jamais totalement atteinte, est ce qui me pousse à progresser chaque jour.
+                    </p>
+                </div>
+                <div class="quality-item">
+                    <h4>Curiosité</h4>
+                    <p>
+                        La curiosité est ce qui me pousse à explorer de nouveaux horizons, notamment dans le domaine des
+                        nouvelles technologies. Chaque jour, je suis fasciné par les innovations qui transforment notre
+                        quotidien. Mon intérêt pour des sujets variés, de l'intelligence artificielle à la
+                        cybersécurité, me permet d'être toujours à l'affût des évolutions qui façonnent le monde de
+                        demain.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="formation">
+            <h2>Formation</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>2022-2025 : BUT Réseaux et Télécommunications - Option Cybersécurité</h3>
+                    <p>Actuellement en 3e année du <strong>BUT Réseaux et Télécommunications</strong> à l'IUT d'Aubière,
+                        avec une spécialisation en <strong>Cybersécurité</strong>. Cette formation approfondie me permet
+                        de développer une expertise technique et théorique dans le domaine des réseaux, des systèmes
+                        informatiques et de la sécurité numérique. Grâce à des projets pratiques, des études de cas et
+                        des stages, je suis en mesure de travailler sur des problématiques complexes en cybersécurité,
+                        en mettant l'accent sur les protocoles de sécurité, la gestion des risques et la mise en place
+                        de solutions de protection des infrastructures.</p>
+                    <p>Au cours de ce cursus, j'ai eu l'occasion de me familiariser avec des outils et des technologies
+                        de pointe, tels que les pare-feu, la gestion des vulnérabilités et l'analyse de données, me
+                        préparant ainsi à devenir un professionnel qualifié dans la protection des systèmes
+                        d’information.</p>
+                    <p>Cette formation m’a également permis de développer des compétences en travail d’équipe, gestion
+                        de projet et communication technique, des qualités essentielles pour réussir dans ce domaine
+                        dynamique et en constante évolution.</p>
+                </li>
+                <li>
+                    <h3>2022 : Baccalauréat général - Option Mathématiques et Sciences de l'Ingénieur</h3>
+                    <p>Obtention du <strong>Baccalauréat général</strong>, avec une spécialisation en
+                        <strong>Mathématiques et Sciences de l’Ingénieur</strong>. Ce parcours m'a permis de développer
+                        une solide base en logique, en résolution de problèmes complexes et en raisonnement
+                        scientifique. Les matières principales telles que les mathématiques, la physique et les sciences
+                        de l’ingénieur m’ont offert une compréhension approfondie des principes qui sous-tendent de
+                        nombreux aspects des technologies modernes, notamment dans la conception et l’optimisation des
+                        systèmes techniques.
+                    </p>
+                    <p>Cette formation m'a également permis de cultiver ma capacité à travailler sous pression, à gérer
+                        des projets de manière structurée et à aborder des défis scientifiques avec une approche
+                        analytique. Ces compétences m'ont été précieuses pour la suite de mon parcours universitaire et
+                        dans mes expériences professionnelles.</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="experience">
+            <h2>Expérience Professionnelle</h2>
+            <div class="experience-timeline">
+                <!-- Stagiaire réseaux -->
+                <div class="experience-item">
+                    <div class="experience-circle"></div>
+                    <div class="experience-content">
+                        <h3>Stagiaire réseaux</h3>
+                        <p class="experience-dates">Avril 2024 - Juin 2024 | <span class="company-name">Aubert & Duval</span></p>
+                        <p>Durant ce stage, j'ai participé activement à la mise en place d'une <strong>stack switch</strong> pour une entreprise de renom. J'ai également travaillé sur l'<strong>automatisation du déploiement du serveur RADIUS</strong>, ce qui a permis de sécuriser l'accès au réseau interne de manière plus efficace.</p>
+                        <ul>
+                            <li>Installation et configuration des équipements réseau (switchs Cisco)</li>
+                            <li>Automatisation du déploiement des configurations RADIUS via un serveur NPS sous Windows Server</li>
+                            <li>Documentation technique sur la mise en place d'une infrastructure sécurisée</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Membre d'une association -->
+                <div class="experience-item">
+                    <div class="experience-circle"></div>
+                    <div class="experience-content">
+                        <h3>Membre actif - Conscrit de Paugnat</h3>
+                        <p class="experience-dates">Septembre 2021 - Septembre 2023 | <span class="company-name">Conscrit de Paugnat</span></p>
+                        <p>Au sein de cette association, j'ai participé à l'organisation d'événements destinés à encourager la cohésion sociale au sein de la communauté locale. J'ai développé des compétences en gestion d'équipe, planification d'événements et communication.</p>
+                        <ul>
+                            <li>Organisation de manifestations et d'événements communautaires pour les jeunes du village</li>
+                            <li>Gestion de la logistique des événements et coordination des bénévoles</li>
+                            <li>Participation à la création d'un programme d'activités récurrentes pour les jeunes de Paugnat</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Hôte de vente -->
+                <div class="experience-item">
+                    <div class="experience-circle"></div>
+                    <div class="experience-content">
+                        <h3>Hôte de vente - Total Énergie</h3>
+                        <p class="experience-dates">Juillet 2023 - Août 2023 | <span class="company-name">Aire des Volcans d'Auvergne</span></p>
+                        <p>Dans le cadre de cet emploi saisonnier, j'ai acquis une expérience précieuse en service à la clientèle et en gestion des stocks. J'étais responsable de l'accueil des clients, de la gestion des encaissements, ainsi que de la mise en rayon des produits.</p>
+                        <ul>
+                            <li>Accueil des clients et gestion des encaissements à la caisse</li>
+                            <li>Mise en rayon des produits et gestion de l’étiquetage</li>
+                            <li>Conseils aux clients sur les produits et services proposés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="competences">
+            <h2>Compétences</h2>
+            <h3>Techniques</h3>
+            <div class="skills">
+                <div class="skill-item">
+                    <label>HTML</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar html" data-percent="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label>CSS</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar css" data-percent="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label>CyberSécurité</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar js" data-percent="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label>Python</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar python" data-percent="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label>PowerShell</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar powershell" data-percent="100"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label>Administration Réseau</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar network" data-percent="90"></div>
+                    </div>
+                </div>
+            </div>
+            <h3>Langues</h3>
+            <div class="skills">
+                <div class="skill-item">
+                    <label>Anglais</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar anglais" data-percent="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label>Espagnol</label>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar espagnol" data-percent="50"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2>Projets</h2>
+            <p>Découvrez les projets sur lesquels j'ai travaillé, incluant l'automatisation réseau, l'étude des systèmes
+                d'exploitation, et bien plus encore !</p>
+
+            <div class="projects-grid">
+                <!-- Projet 1: Stage Aubert & Duval -->
+                <div class="project" data-url="project1.html">
+                    <h3>Stage Aubert & Duval</h3>
+                    <p>Automatisation de l'authentification RADIUS via un serveur NPS. Un projet orienté vers
+                        l'infrastructure réseau.</p>
+                    <a href="project1.html" class="project-link">Voir le projet</a>
+                </div>
+
+                <!-- Projet 2: Alternatives Android iOS -->
+                <div class="project" data-url="project2.html">
+                    <h3>Alternatives Android iOS</h3>
+                    <p>Étude des systèmes d'exploitation alternatifs pour smartphones (Ubuntu Touch, LineageOS, etc.).
+                        Un projet axé sur les OS mobiles open-source.</p>
+                    <a href="project2.html" class="project-link">Voir le projet</a>
+                </div>
+
+                <!-- Projet 3: Brochure BUT Réseaux et Télécommunications -->
+                <div class="project" data-url="project3.html">
+                    <h3>Brochure BUT Réseaux et Télécommunications</h3>
+                    <p>Création d'une brochure pour présenter le programme BUT de Clermont-Ferrand lors des journées
+                        portes ouvertes.</p>
+                    <a href="project3.html" class="project-link">Voir le projet</a>
+                </div>
+
+                <!-- Projet 4: Maquette ABC Tourbillion -->
+                <div class="project" data-url="project4.html">
+                    <h3>Maquette ABC Tourbillion</h3>
+                    <p>Programmation et étude de l'inertie pour une maquette d'attraction mécanique miniature
+                        fonctionnelle.</p>
+                    <a href="project4.html" class="project-link">Voir le projet</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="divers"
+            style="display: flex; flex-direction: column; gap: 20px; align-items: center; justify-content: center;">
+            <h2>Divers</h2>
+
+            <!-- Football - Image à gauche, texte à droite -->
+            <div
+                style="display: flex; align-items: center; justify-content: space-between; width: 80%; max-width: 1200px;">
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                    <div style="flex-shrink: 0;">
+                        <img src="image/foot.jpg" alt="Football" style="width: 300px; margin-right: 20px;">
+                    </div>
+                    <div>
+                        <h3>Football</h3>
+                        <p>La pratique du football en tant que défenseur central au RCCP (Rugby Club de Clermont-Puy)
+                            m'a apporté bien plus que des compétences sportives. Elle m'a permis de développer des
+                            qualités essentielles telles que la discipline, la gestion du stress et la prise de décision
+                            rapide sous pression. Sur le terrain, il est essentiel de savoir anticiper les mouvements de
+                            l'adversaire, ce qui se traduit par une capacité accrue à analyser des situations complexes
+                            dans mon quotidien professionnel.</p>
+                        <p>Le travail d'équipe est également une valeur primordiale que j'ai apprise et que je mets en
+                            pratique au quotidien. Le football m'a appris à collaborer, à soutenir mes coéquipiers et à
+                            travailler vers un objectif commun, des compétences qui sont transposables à mes études et à
+                            mes projets professionnels.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Voyages - Image à droite, texte à gauche -->
+            <div
+                style="display: flex; align-items: center; justify-content: space-between; width: 80%; max-width: 1200px;">
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                    <div>
+                        <h3>Voyages</h3>
+                        <p>Les voyages ont toujours été une source de croissance personnelle pour moi. Voyager, c’est
+                            non seulement découvrir de nouveaux lieux, mais aussi de nouvelles cultures, de nouvelles
+                            façons de penser et de vivre. Ces expériences m’ont permis d’enrichir ma vision du monde et
+                            d’apprendre à m’adapter à différents environnements.</p>
+                        <p>J'ai eu l'opportunité de voyager autour du bassin méditerranéen, un périple qui m'a permis de
+                            découvrir des pays fascinants tels que l’Espagne, l’Italie, la Grèce et la Jordanie. Chaque
+                            escale m’a offert des perspectives uniques et m’a appris à comprendre la diversité des
+                            cultures méditerranéennes, tout en renforçant ma curiosité et ma soif de découverte. Ces
+                            voyages m’ont également appris à être plus ouvert d’esprit et à respecter des valeurs
+                            universelles telles que l’hospitalité et la convivialité.</p>
+                        <p>Ces expériences ont enrichi ma manière de penser et ont également nourri ma créativité.
+                            L’exposition à ces différentes cultures m’a permis d’acquérir une vision plus globale et
+                            multiculturelle du monde, qui me sert dans mes études et dans ma manière d’aborder les
+                            problèmes complexes dans mon domaine d’étude.</p>
+                    </div>
+                    <div style="flex-shrink: 0;">
+                        <img src="image/desert.JPG" alt="Voyages" style="width: 300px; margin-left: 20px;">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="contact" style="text-align: center;">
+            <h2>Contact</h2>
+            <p>Email : <a href="mailto:yanis.marchal@etu.uca.fr">yanis.marchal@etu.uca.fr</a></p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanis Marchal. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projects = document.querySelectorAll('.project');
+            const modal = document.getElementById('project-modal');
+            const modalImage = document.getElementById('modal-image');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const closeModal = document.querySelector('.close');
+
+            // Ouvrir la modale
+            projects.forEach(project => {
+                project.addEventListener('click', () => {
+                    const title = project.dataset.title;
+                    const description = project.dataset.description;
+                    const image = project.dataset.image;
+
+                    modalTitle.textContent = title;
+                    modalDescription.textContent = description;
+                    modalImage.src = image;
+
+                    modal.style.display = 'flex';
+                });
+            });
+
+            // Fermer la modale
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            // Fermer la modale en cliquant à l'extérieur
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Charger les progress bars après le chargement
+            document.querySelectorAll('.progress-bar').forEach(bar => {
+                const percent = bar.getAttribute('data-percent');
+                bar.style.width = percent + '%';
+            });
+        });
+    </script>
+</body>
+
+</html>
